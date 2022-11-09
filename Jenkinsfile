@@ -10,7 +10,7 @@ pipeline {
                 git branch: 'J2EE', url: 'https://github.com/Shubhamvaishnavv/onlinebookstore.git'
            }
         }
-        stage('Git Clone') {
+        stage('Git Build') {
             steps {
                  sh 'mvn clean install -DskipTests'
             }
