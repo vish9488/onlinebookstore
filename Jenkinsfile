@@ -20,7 +20,7 @@ pipeline {
                 sh 'docker stop container1'
                 sh 'docker rm container1'
                 sh 'docker build -t myimage .'
-                sh 'docker run -itdp 8085:8080 --name my-container myimage'
+                sh 'docker run -itdp 8085:8080 --name container1 myimage'
             }
         }
     }
